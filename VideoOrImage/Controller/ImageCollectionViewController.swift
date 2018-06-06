@@ -28,10 +28,6 @@ class ImageCollectionViewController: UICollectionViewController,UITextFieldDeleg
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let maskPath = UIBezierPath(roundedRect: view.bounds, byRoundingCorners: [.topLeft,.topRight,.bottomLeft,.bottomRight], cornerRadii: CGSize(width: 10.0, height: 10.0))
-        let shape = CAShapeLayer()
-        shape.path = maskPath.cgPath
-        view.layer.mask = shape
         self.collectionView?.backgroundColor = UIColor.white
         
         //view.addTapGestureToHideKeyboard()
